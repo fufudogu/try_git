@@ -1,0 +1,342 @@
+/*
+  @theme Earthworm
+  @override-placeholders css, html, php, markdown
+  @author Ian Beck
+*/
+
+@base {
+	color: #fff;
+	background-color: #333;
+	insertion-point-color: #fff;
+	selection-background-color: #544E44;
+}
+
+/* @group Generic */
+
+tag, source, sourcecode, styling {
+	spell-check: disabled;
+}
+
+comment, comment > punctuation {
+	color: #776644;
+}
+
+string {
+	color: #abc837;
+}
+
+operator {
+	color: #fff;
+}
+
+keyword, keyword.operator, constant, numeric, character {
+	color: #e8bf6a;
+}
+
+comment keyword {
+	color: #776644;
+	font-weight: bold;
+}
+
+variable {
+	color: #CDDE87;
+}
+
+function, definition name {
+	color: #EE0F04;
+}
+
+invalid {
+	color: #fff;
+	background: rgba(150, 0, 0, .8);
+}
+
+/* @end */
+
+/* @group HTML+XML */
+
+tag {
+	color: #e8bf6a;
+	spell-check: disabled;
+}
+
+html doctype, html doctype name, html doctype punctuation,
+xml processing-instruction, xml processing-instruction string, xml processing-instruction string value {
+	color: #776644;
+}
+
+html string value,
+xml string value {
+	color: #abc837;
+}
+
+html character.entity {
+	color: #CDDE87;
+}
+
+/* @end */
+
+/* @group CSS */
+
+css.embedded {
+	background: #24211D;
+}
+
+css selector, css selector punctuation {
+	color: #CDDE87;
+}
+
+css property-name {
+	color: #e8bf6a;
+}
+
+css property-value, css property-value constant, css property-value keyword {
+	color: #abc837;
+}
+
+css punctuation {
+	color: #fff;
+}
+
+css comment punctuation {
+	color: #776644;
+}
+
+css keyword.important {
+	color: #abc837;
+	font-weight: bold;
+}
+
+css color, css color punctuation {
+	color: #abc837;
+}
+
+css group-start name {
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group Javascript */
+
+js.embedded {
+	background: #24211D;
+}
+
+js variable {
+	color: #fff;
+}
+
+js variable.string {
+	color: #abc837;
+}
+
+js constant {
+	color: #CDDE87;
+}
+
+js class.constructor > variable, js function.definition name {
+	color: #EE0F04;
+}
+
+js keyword.language {
+	color: #CDDE87;
+}
+
+/* @end */
+
+/* @group Apache */
+
+apache keyword.directive {
+	color: #CDDE87;
+}
+
+apache tag > keyword {
+	color: #e8bf6a;
+}
+
+apache variable {
+	color: #e5d08b;
+}
+
+/* @end */
+
+/* @group PHP */
+
+php.sourcecode {
+	background: #1a1a1a;
+	spell-check: disabled;
+}
+
+php delimiter.source, php delimiter.source > *,
+php string > expression.complex > punctuation {
+	color: #fff;
+}
+
+php definition name, php variable.function {
+	color: #EE0F04;
+	font-weight: normal;
+}
+
+php variable.keyword {
+	color: #CDDE87;
+	font-weight: bold;
+}
+
+php constant {
+	color: #fff;
+}
+
+php constant.numeric, php constant.language {
+	color: #e8bf6a;
+}
+
+php comment > keyword {
+	color: #776644;
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group RegEx */
+
+regex, regex.literal > punctuation.definition {
+	color: #abc837;
+}
+
+regex punctuation.group {
+	color: #e8bf6a;
+}
+
+regex keyword, regex operator, regex escaped, regex character-class, regex character-class > punctuation {
+	color: #CDDE87;
+}
+
+regex > regex.group, regex.group > punctuation {
+	background: rgba(255, 255, 255, 0);
+}
+
+/* @end */
+
+/* @group Markdown */
+
+markdown > punctuation.definition, markdown *:not(html,comment) punctuation.definition, markdown separator {
+  color: #776644;
+}
+
+markdown separator, markdown hard-break {
+  background: #444;
+}
+
+markdown header {
+  font-weight: bold;
+}
+
+markdown bold {
+  font-weight: bold;
+}
+
+markdown italic {
+  font-style: italic;
+}
+
+markdown bold italic, markdown italic bold {
+  font-weight: bold;
+  font-style: italic;
+}
+
+markdown code {
+  color: #e8bf6a;
+}
+
+markdown link, markdown image {
+  color: #CDDE87;
+}
+
+markdown link > punctuation, markdown image > punctuation {
+  color: #776644;
+}
+
+markdown url, markdown email {
+  color: #abc837;
+}
+
+markdown keyword.reference {
+  color: #776644;
+}
+
+/* @end */
+
+/* @group Third Party */
+
+/* @group ExpressionEngine */
+
+ee.tag, ee.operator, ee.attribute-name,
+ee ee.tag > ee.name, ee ee.tag > ee.punctuation, ee ee.tag.conditional,
+ee ee.tag ee.attribute-name {
+	color: #CDDE87;
+}
+
+ee ee.tag ee.attribute-name {
+	font-weight: normal;
+}
+
+ee ee.tag.self-closing.conditional {
+	background: #333;
+}
+
+ee.attribute, ee ee.tag ee.attribute {
+	color: #abc837;
+}
+
+/* @end */
+
+/* @group Actionscript */
+
+as3 keyword.as3, as3 keyword.bool {
+	color: #e8bf6a;
+}
+
+as3 keyword.function.as3 {
+	color: #EE0F04;
+}
+
+as3 method name, as3 keyword.operators.as3 {
+	color: #fff;
+}
+
+as3 integral.value {
+	background: #333;
+}
+
+as3 keyword.class.as3 {
+	color: #CDDE87;
+}
+
+/* @end */
+
+/* @group ColdFusion */
+
+cfm.tag {
+	color: #CDDE87;
+}
+
+cfm operator, cfm keyword {
+	color: #e8bf6a;
+}
+
+cfml.embedded output {
+	color: #fff;
+}
+
+cfml.embedded coldfusion.embedded {
+	color: #e8bf6a
+}
+
+function.cfm > parenthesis {
+	color: #CDDE87;
+}
+
+/* @end */
+
+/* @end */
